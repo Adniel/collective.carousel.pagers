@@ -1,0 +1,17 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:carousel="http://namespaces.plone.org/carousel"
+    i18n_domain="collective.carousel.pagers">
+
+  <carousel:banner
+    name="banner-iconed"
+    template="templates/banner-iconed.pt"
+    title="Banner with Icons"
+  />
+  
+  <carousel:banner
+    name="banner-aligned"
+    template="templates/banner-aligned.pt"
+    title="Banner with text on the left"
+  />
+</configure>

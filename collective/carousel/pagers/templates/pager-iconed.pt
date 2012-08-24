@@ -1,0 +1,13 @@
+<metal:pager metal:use-macro="context/@@pager-base/macros/pager">
+    <metal:pageritem fill-slot="pager_item_body">
+      <div>
+        <a tal:attributes="class string:carousel-pager-item carousel-pager-item-${repeat/banner/number} carousel-button;
+                           id string:carousel-button-${repeat/banner/index}"
+            href="#"
+            class="carousel-title carousel-button">
+          <span class="carousel-title" tal:content="banner/Title">Il nostro sito</span>
+          <span class="carousel-description"></span>
+        </a>
+      </div>
+    </metal:pageritem>
+</metal:pager>

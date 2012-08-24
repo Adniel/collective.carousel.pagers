@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.carousel.pagers">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <include package="Products.Carousel" />
+  <include file="banners.zcml" />
+  <include file="pagers.zcml" />
+
+  <genericsetup:registerProfile
+    name="default"
+    title="Carousel layouts"
+    directory="profiles/default"
+    description="Products.Carousel layout extension"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
+
+
+
+</configure>

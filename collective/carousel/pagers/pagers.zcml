@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:carousel="http://namespaces.plone.org/carousel"
+    i18n_domain="collective.carousel.pagers">
+
+  <carousel:pager
+    name="pager-iconed"
+    template="templates/pager-iconed.pt"
+    title="Icons"
+  />
+
+  <carousel:pager
+    name="pager-bullet_np"
+    template="templates/pager-bullet_np.pt"
+    title="Bullet with next and prev"
+  />
+
+
+</configure>
