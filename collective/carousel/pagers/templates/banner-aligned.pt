@@ -4,7 +4,10 @@
                 has_link_url python:link_url and not link_url == 'http://';
                 image_url banner/getImageUrl;
                 has_image_url python:image_url and not image_url == 'http://';">
-            <img tal:replace="structure python:banner.tag()"/>
+            <a tal:omit-tag="not:has_image_url"
+               tal:attributes="href image_url">
+              <img tal:replace="structure python:banner.tag()"/>
+            </a>
             <div tal:define="text banner/getText|nothing;"
                 tal:condition="python:'title' in elements or ('text' in elements and text)"
                 class="carousel-caption">
