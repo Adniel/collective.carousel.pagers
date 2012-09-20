@@ -7,11 +7,13 @@
     name="banner-iconed"
     template="templates/banner-iconed.pt"
     title="Banner with Icons"
+    i18n:attributes="title"
   />
   
   <carousel:banner
     name="banner-aligned"
     template="templates/banner-aligned.pt"
     title="Banner with text on the left"
+    i18n:attributes="title"
   />
 </configure>

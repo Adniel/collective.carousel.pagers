@@ -7,12 +7,14 @@
     name="pager-iconed"
     template="templates/pager-iconed.pt"
     title="Icons"
+    i18n:attributes="title"
   />
 
   <carousel:pager
     name="pager-bullet_np"
     template="templates/pager-bullet_np.pt"
     title="Bullet with next and prev"
+    i18n:attributes="title"
   />
 
 
