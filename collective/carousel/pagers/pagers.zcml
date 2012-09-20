@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:carousel="http://namespaces.plone.org/carousel"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
     i18n_domain="collective.carousel.pagers">
 
   <carousel:pager
